@@ -467,7 +467,8 @@ class PslTypBandwidth(PslTyp):
 
 class PslTypVlanId(PslTyp):
     "Vlan ports are binary coded"
-    BIN_PORTS = {1: 0x80,
+    BIN_PORTS = {0: 0x00,
+                 1: 0x80,
                  2: 0x40,
                  3: 0x20,
                  4: 0x10,
